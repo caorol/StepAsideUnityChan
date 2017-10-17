@@ -1141,6 +1141,7 @@ GameObject:
   - component: {fileID: 2071030336}
   - component: {fileID: 2071030335}
   - component: {fileID: 2071030340}
+  - component: {fileID: 2071030341}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1232,6 +1233,18 @@ MonoBehaviour:
   carPrefab: {fileID: 1529275159619598, guid: 8d18b4959b3074c08a7595573e3370e4, type: 2}
   coinPrefab: {fileID: 1553057543370968, guid: 1ec5981e938634ab9b790d02702f426c, type: 2}
   conePrefab: {fileID: 1737305158448464, guid: fb4d611fe8df14d70a76eaf89383fce9, type: 2}
+--- !u!114 &2071030341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071030334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 7218a9b34b74f492895fd661ba6e5780, type: 2}
 --- !u!1 &2071584436
 GameObject:
   m_ObjectHideFlags: 0
