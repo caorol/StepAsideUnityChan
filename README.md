@@ -8,6 +8,12 @@ Asset store で `post processing stack`を import（デフォルトチェック�
 
 ※ Assets - Import Package - Effects でインポートされる Standard Assets は今後メンテされないそうです
 
+#### 詳細
+https://qiita.com/Sase/items/c375348af2686c398c18
+https://www.youtube.com/embed/r5mNmH68KPQ?rel=0&start=1320&end=1350
+
+※ 動画の方が説明が細かい
+
 ### アセットをアタッチ
 1. HieraHierarchy ビューで `Main Camera` を選択
 2. `Inspector` の `Add Component` で `post processing` を検索
