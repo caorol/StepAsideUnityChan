@@ -48,3 +48,6 @@ https://www.youtube.com/embed/r5mNmH68KPQ?rel=0&start=1320&end=1350
 
 ### 実機に流し込む
 ボケている箇所が白黒になるという結果に！Σ(ﾟДﾟ)
+
+#### ひとまずタグを打っておく
+タグ: v1.0-use-post-processing
