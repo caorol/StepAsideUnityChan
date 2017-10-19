@@ -71,9 +71,14 @@ UI Scale Mode: `Scala With Screen Size`
   → 解像度でスケールさせる
 
 ReferenceResolution: `1280, 720`  
-→ [MOBILE (IOS) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-ios.htm)  
-→ [MOBILE (ANDROID) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-android.htm)  
+→ [MOBILE (IOS) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-ios.html)  
+→ [MOBILE (ANDROID) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-android.html)  
   → 16:9 が多い
 
 Screen MatchMode: `Expand`  
   → ゲーム画面内範囲で調整
+
+
+---
+## MOBILE HARDWARE STATS まとめて
+[MOBILE HARDWARE STATS](https://hwstats.unity3d.com/mobile/)
