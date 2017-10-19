@@ -2,6 +2,7 @@
 
 ![ゲームシーン](https://raw.github.com/caorol/StepAsideUnityChan/master/gamescene.png)
 
+---
 ## フォーカス処理（ボカシ）
 ### アセットをインポートする
 Asset store で `post processing stack`を import（デフォルトチェックのままでOK）  
@@ -13,13 +14,6 @@ https://qiita.com/Sase/items/c375348af2686c398c18
 https://www.youtube.com/embed/r5mNmH68KPQ?rel=0&start=1320&end=1350
 
 ※ 動画の方が説明が細かい
-
-### アセットをアタッチ
-1. HieraHierarchy ビューで `Main Camera` を選択
-2. `Inspector` の `Add Component` で `post processing` を検索
-3. `Post-Prosessing Behaviour` を追加
-4. Project ビューで `Post-Processing Profile` アセット作成
-5. 上記 `Post-Processing Profile` を `Main Camera` の `Post-Processing Behaviour` の `Profile` にアタッチ
 
 ### Post-Processing Stack 初期設定
 1. Player Settings を変更
@@ -40,6 +34,13 @@ https://www.youtube.com/embed/r5mNmH68KPQ?rel=0&start=1320&end=1350
 
 この設定で１００％ポストプロセスが使えるようになる、必ず設定しないと使えないわけではない
 
+### アセットをアタッチ
+1. HieraHierarchy ビューで `Main Camera` を選択
+2. `Inspector` の `Add Component` で `post processing` を検索
+3. `Post-Prosessing Behaviour` を追加
+4. Project ビューで `Post-Processing Profile` アセット作成
+5. 上記 `Post-Processing Profile` を `Main Camera` の `Post-Processing Behaviour` の `Profile` にアタッチ
+
 ### Post-Processing Profile 設定
 #### Inspector - Depth of Field（被写界深度）
 1. Use Camera FOV にチェック
@@ -51,3 +52,27 @@ https://www.youtube.com/embed/r5mNmH68KPQ?rel=0&start=1320&end=1350
 
 #### ひとまずタグを打っておく
 タグ: v1.0-use-post-processing
+
+#### 結論
+GPUのスペック不足…らしい
+
+モバイル対応のエフェクトを使うといいみたい（↓参考）
+> [FxPro: Bloom&DOF, Mobile-Ready ($7.51)](https://www.assetstore.unity3d.com/en/#!/content/22189)  
+> [Depth of Field Mobile Shader ($37.80)](https://www.assetstore.unity3d.com/en/#!/content/15434)
+
+
+---
+## UI Text などが小さく表示されてしまう問題
+解像度に合わせて UI をスケーリングする場合、Text の上の Canvas オブジェクトにアタッチされている `Canvas Scaler`コンポーネントの設定を変更する。
+
+![Canvas Scaler]((https://raw.github.com/caorol/StepAsideUnityChan/master/canvasscaler.png))
+
+UI Scale Mode: `Scala With Screen Size`  
+  → 解像度でスケールさせる
+
+ReferenceResolution: `1280, 720`
+  → [スマホ解像度シェアから](http://mw-s.jp/2017-mobile-monitor/)
+  → 16:10, 16:9 が多い
+
+Screen MatchMode: `Expand`
+  → ゲーム画面内範囲で調整
