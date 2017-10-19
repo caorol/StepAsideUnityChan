@@ -70,9 +70,10 @@ GPUのスペック不足…らしい
 UI Scale Mode: `Scala With Screen Size`  
   → 解像度でスケールさせる
 
-ReferenceResolution: `1280, 720`
-  → [スマホ解像度シェアから](http://mw-s.jp/2017-mobile-monitor/)
-  → 16:10, 16:9 が多い
+ReferenceResolution: `1280, 720`  
+→ [MOBILE (IOS) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-ios.htm)  
+→ [MOBILE (ANDROID) HARDWARE STATS 2017-03](https://hwstats.unity3d.com/mobile/display-android.htm)  
+  → 16:9 が多い
 
-Screen MatchMode: `Expand`
+Screen MatchMode: `Expand`  
   → ゲーム画面内範囲で調整
